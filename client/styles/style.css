@@ -1,0 +1,124 @@
+#sky-clouds-fast,
+#sky-clouds-slow,
+#sky-clouds-backwards-fast,
+#sky-clouds-backwards-slow,
+#water1-fast,
+#water1-slow {
+  height: 100vh;
+  opacity: 0.01%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#sky-clouds-backwards-slow {
+  margin-top: -100vh;
+  z-index: 1;
+}
+
+#sky-clouds-backwards-fast {
+  z-index: 2;
+  margin-top: -100vh;
+}
+
+#sky-clouds-slow {
+  /* z-index: 3; */
+  margin-top: -100vh;
+}
+
+#sky-clouds-fast {
+  z-index: 4;
+}
+
+#water1-fast {
+  margin-top: -100vh;
+  z-index: 5;
+}
+
+#water1-slow {
+  margin-top: -100vh;
+  z-index: 6;
+}
+
+body {
+  display: grid;
+  background-image: linear-gradient(
+    rgb(134, 97, 160),
+    rgb(184, 150, 208),
+    white,
+    rgb(184, 150, 208),
+    rgb(134, 97, 160)
+  );
+  height: 100vh;
+}
+
+.main {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  z-index: 20;
+}
+
+#circle {
+  width: 600px;
+  height: 600px;
+  border: 3px solid rgb(242, 166, 231);
+  border-radius: 50%;
+  /* overflow: hidden; */
+  align-self: center;
+  z-index: 4;
+  justify-self: center;
+  overflow: hidden;
+}
+
+#circle:hover {
+  border: 3px solid rgb(255, 255, 255);
+}
+
+#gallery {
+  display: grid;
+  /* position: absolute; */
+  z-index: 1;
+
+  overflow: hidden;
+
+  margin-left: -20vw;
+  margin-top: -6vh;
+}
+
+#tsiolkovsky {
+  z-index: 7;
+  opacity: 0.01%;
+  margin-top: -95vh;
+  margin-left: 105px;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  min-width: 1000px;
+  min-height: 1000px;
+}
+
+#tsiolkovsky-image {
+  height: 635px;
+}
+
+#triton {
+  z-index: 7;
+  opacity: 0.01%;
+  margin-top: -105vh;
+  align-self: center;
+  justify-self: center;
+  margin-left: -20px;
+  z-index: 5;
+}
+
+#triton-gif {
+  width: 900px;
+}
+
+audio {
+  display: none;
+}
+/* write media queries for triton and tskolkovsy */
